@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace kiemtraketthuc
 {
-    class Meo : DongVat
+     class Meo : DongVat
     {
         public Meo()
         {
@@ -23,3 +23,4 @@ namespace kiemtraketthuc
         }
     }
 }
+
