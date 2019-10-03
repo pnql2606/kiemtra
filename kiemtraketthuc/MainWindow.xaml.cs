@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,20 +26,18 @@ namespace kiemtraketthucmon
             InitializeComponent();
         }
 
-      
-private void BtnMeo_Click(object sender, RoutedEventArgs e)
+        private void BtnMeo_Click(object sender, RoutedEventArgs e)
         {
-            meo meo = new meo();
-            meo.MauLong = "vang";
-            MessageBox.Show(meo.keu());
+            Meo meo = new Meo();
+            meo.MauLong = "trang";
+           MessageBox.Show( meo.keu());
         }
-    
 
-    private void TnCho_Click(object sender, RoutedEventArgs e)
+        private void TnCho_Click(object sender, RoutedEventArgs e)
         {
-            CHO cho = new CHO();
-            cho.MauLong = "den";
-            MessageBox.Show(cho.keu());
+            Cho cho = new Cho();
+            cho.MauLong = "Den";
+            MessageBox.Show( cho.keu());
 
         }
     }
