@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace kiemtraketthuc
 {
-    class cho
+    class Cho : DongVat
     {
-        public override void Talk()
+        public Cho()
         {
-            base.Talk();
+        }
+
+        public Cho(string mauLong) : base(mauLong)
+        {
+            MauLong = mauLong;
+        }
+
+        public override string keu()
+        {
+            return base.keu() + "Gau gau " + "Toi la cho long mau " + MauLong;
         }
     }
 }
