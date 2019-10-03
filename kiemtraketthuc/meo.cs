@@ -4,14 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace kiemtraketthuc
+namespace kiemtraketthucmon
 {
-    class meo
+    class Meo : DongVat
     {
-        class Meo : Dongvat
+        public Meo()
         {
-            public override void Talk()
-            {
-                base.Talk();
-            }
+        }
+
+        public Meo(string mauLong) : base(mauLong)
+        {
+            MauLong = mauLong;
+        }
+
+        public override string keu()
+        {
+            return base.keu() + "Meo meo " + "Toi la meo long mau " + MauLong;
+        }
+    }
 }
