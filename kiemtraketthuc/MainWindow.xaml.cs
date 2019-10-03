@@ -29,7 +29,7 @@ namespace kiemtraketthucmon
       
 private void BtnMeo_Click(object sender, RoutedEventArgs e)
         {
-            Meo meo = new Meo();
+            meo meo = new meo();
             meo.MauLong = "vang";
             MessageBox.Show(meo.keu());
         }
@@ -37,7 +37,7 @@ private void BtnMeo_Click(object sender, RoutedEventArgs e)
 
     private void TnCho_Click(object sender, RoutedEventArgs e)
         {
-            Cho cho = new Cho();
+            CHO cho = new CHO();
             cho.MauLong = "den";
             MessageBox.Show(cho.keu());
 
