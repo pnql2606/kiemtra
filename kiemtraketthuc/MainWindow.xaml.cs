@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using kiemtraketthucmon;
 
-namespace kiemtraketthuc
+namespace kiemtraketthucmon
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +24,23 @@ namespace kiemtraketthuc
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+      
+private void BtnMeo_Click(object sender, RoutedEventArgs e)
+        {
+            Meo meo = new Meo();
+            meo.MauLong = "vang";
+            MessageBox.Show(meo.keu());
+        }
+    
+
+    private void TnCho_Click(object sender, RoutedEventArgs e)
+        {
+            Cho cho = new Cho();
+            cho.MauLong = "den";
+            MessageBox.Show(cho.keu());
+
         }
     }
 }
