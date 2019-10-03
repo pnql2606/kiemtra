@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace kiemtraketthuc
 {
-    class CHO
+    class cho
     {
+        public override void Talk()
+        {
+            base.Talk();
+        }
     }
 }
